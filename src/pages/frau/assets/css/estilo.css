@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+    transition: all 1s;
+}
+.container{
+    width:790px;
+    display:flex;
+    justify-content: space-between;
+}
+header{
+    display:flex;
+    justify-content: center;
+    height: 70px;
+}
+header .left,
+header .right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul li,
+header ol li{
+    display: inline;
+    padding:10px;
+    list-style: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+header ul li:hover,
+header ol li:hover{
+    color:#fff;
+    background-color: #000;
+}
+section{
+    display: flex;
+    justify-content: center;
+}
+.black{
+    padding: 15px;
+    background-color: #000;
+    color: #fff;
+}
+.black span{
+    display: inline-block;
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.body .container{
+    padding-top: 20px;
+    justify-content: flex-start;
+    border-bottom: 1px solid #bbb;
+}
+.product{
+    flex:2;
+    margin:20px;
+}
+.product_action{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
+.product_action .desc{
+    margin-bottom: 20px;
+}
+.desc .name{
+    font:14pt Arial;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.desc .preco{
+    font:13pt Calibri;
+    font-weight: bold;
+}
+.product_action form{
+    margin-bottom: 10px;
+}
+.form select{
+    margin:5px 0;
+    padding: 5px;
+    border:2px solid #000;
+    background-color: #cccc;
+    text-transform: uppercase;
+    color:#000;
+}
+.form input{
+    width:75%;
+    margin:10px 0;
+    padding: 8px;
+    border:2px solid #333;
+    background-color: #333;
+    text-transform: uppercase;
+    color:#fff;
+}
+.social{
+    margin:10px 0;
+}
+.social li{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin:10px 0;
+    padding: 5px;
+    border:1px solid #000;
+    cursor: pointer;
+}
+.social li img{
+    width:100%;
+}
+.social a{
+    text-transform: uppercase;
+}
+.commit .container{
+    margin-top: 20px;
+    justify-content: space-around;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.commit .first{
+    text-align: center;
+}
+.commit .first .slongBig{
+    margin-bottom:10px;
+    font-size: 14pt;
+    line-height: 20pt;
+}
+.commit .first .slongpeq{
+    margin-bottom: 10px;
+    font-size: 10pt;
+}
+.commit .first .input{
+    border:2px solid #222;
+    background-color: #222;
+}
+.commit .first input{
+    padding: 10px 5px;
+    outline: none;
+}
+.commit .first input[type="button"]{
+    border:none;
+    padding: 10px 25px;
+    cursor: pointer;
+    background-color: #222;
+    color:#fff;
+}
+.commit .social li{
+    display: block;
+}
+.commit .last p{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 10pt;
+}
+.commit .last span{
+    font-size: 16pt;
+}
+.commit .last span::before{
+    content:' ';
+	padding:8px 10px;
+	background-position: center;
+	background-size:20px;
+    background-repeat: no-repeat;
+	background-image:url('../img/telefone.png');
+}
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 25px 0 15px;
+    background-color: #222;
+    font:10pt Calibri;
+    color:#fff;
+}
