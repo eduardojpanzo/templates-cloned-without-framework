@@ -1,0 +1,116 @@
+/*Contact*/
+.contact-container{
+    padding: 0 5%;
+}
+.contact-info,
+.contact-form{
+    margin: 20px 0;
+    padding: 30px;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+}
+.info{
+    display: flex;
+    margin: 20px 0;
+}
+.info i{
+    display: block;
+    min-width: 50px;
+    min-height: 50px;
+    align-self: flex-start;
+    margin:0 20px 0 0;
+    border-radius: 50%;
+    background-color: #dff3fc;
+    font-size: 18pt;
+    text-align: center;
+    line-height: 2;
+    color: #024fb7;
+}
+.info p{
+    margin-bottom: 5px;
+    font-size: 16pt;
+    font-weight: 400;
+    color: #0080e6;
+}
+.info span{
+    color:#173b6c;
+    font-size: 10pt;
+}
+.info--map{
+    background-color: #f5f8fd;
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 39pt;
+}
+.contact-form{
+
+}
+.form-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.form--name,
+.form--email{
+    flex: 0 0 48%;
+    max-width: 48%;
+}
+.form-group{
+    padding-bottom: 8px;
+    margin: 2px;
+}
+.form-group label{
+    display: inline-block;
+    margin-bottom: .5rem
+}
+.form-group input{
+    height: 44px;
+}
+.form-group input,
+.form-group textarea{
+    
+}
+.form-control{
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    border-radius: 0;
+    border: 1px solid #ced4da;
+    box-shadow: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 14px;
+    color: #495057;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    outline-color: #149ddd;
+}
+.form--message .form-control{
+    overflow: auto;
+    resize: vertical;
+}
+.form--submit{
+    text-align: center;
+}
+.form--submit button{
+    padding: 10px 24px;
+    border: 0;
+    border-radius: 4px;
+    background: #0794f7;
+    color: #fff;
+    transition: 0.4s;
+}
+
+/*media*/
+@media (min-width: 1024px){
+    .contact-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(auto, 1fr);
+        grid-gap: 20px;
+    }
+    .desc-contact{
+        grid-column: span 2;
+    }
+}

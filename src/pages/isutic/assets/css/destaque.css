@@ -1,0 +1,45 @@
+/*SECTION DESTAQUE*/
+#destaque{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/bg.jpg) top center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#destaque::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left:0;
+    right: 0;
+    z-index: 1;
+}
+#destaque .destaque-desc{
+    position: relative;
+    z-index: 2;
+    min-width: 300px;
+    padding: 0 15px;
+    color: #fff;
+}
+.destaque-desc h1{
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 10px;
+}
+.destaque-desc p{
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+/*media*/
+@media (min-width:768px){
+    .destaque-desc h1{
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 56px;
+    }
+}

@@ -1,0 +1,112 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #040b14;
+    overflow-x: hidden;
+}
+.nav-active #header{
+    left: 0;
+}
+.nav-active .fa-bars::before{
+    content: "\f00d";
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+/*Navigation toggle*/
+.navigation-menu{
+	border: 0;
+    background: none;
+    font-size: 24px;
+    transition: all 0.4s;
+    outline: none !important;
+    cursor: pointer;
+	
+	position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 9998;
+}
+
+/*MAIN*/
+/*default*/
+.title{
+    width: 100%;
+    padding: 15px 15px 0;
+}
+.title h2{
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    position: relative;
+    color: #024fb7;
+}
+.title h2::before{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: #024fb7;
+    position: absolute;
+    bottom: 0;
+}
+/*FIM MAIN--------*/
+
+/*animetion*/
+[data-anime],
+[about-anime]{
+    transition: 0.3s;
+    opacity: 0;
+}
+[data-anime="top"]{
+    transform: translate3d(0, -60px , 0);
+}
+[data-anime="left"],
+[about-anime="left"]{
+    transform: translate3d(-20px, 0 , 0);
+}
+[data-anime="right"],
+[about-anime="right"]{
+    transform: translate3d(20px, 0 , 0);
+}
+[data-anime="center"]{
+    transform: scale(0.4);
+}
+[data-anime="bottom"]{
+    transform: translate3d(0, 80px , 0);
+}
+*.animeted{
+    transform: translate3d(0px, 0px , 0);
+    transform: scale(1);
+    opacity: 1;
+}
+/*media*/
+@media (min-width: 1200px){
+    .navigation-menu{
+        display: none;
+    }
+    #main{
+        margin-left: 300px;
+    }
+}
+
+/*
+    #040b14 -> preto 1
+    #8a8780 -> cinza 1
+    #ededee -> cinza claro
+    #f5f8fd -> cinza banco
+    #dff3fc -> azul 0
+    #0794f7 -> azul 1
+    #0080e6 -> azul 2
+    #024fb7 -> azul 3
+    #173b6c -> azul 4
+*/

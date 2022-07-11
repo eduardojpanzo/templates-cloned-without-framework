@@ -1,0 +1,73 @@
+/*Testimonials*/
+.testimo{
+    margin-top: 40px;
+    background-color: #f5f8fd;
+}
+.testimo-container{
+    min-width: 200px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+.itens-testimo{
+    width: 500%;
+    padding: 20px 0;
+    display: flex;
+    animation-name: testimo;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+.item-testimo{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4%;
+}
+.item-testimo > p{
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    background-color: #fff;
+    text-align: center;
+    font-size: 10pt;
+    position: relative;
+}
+.item-testimo > p::after{
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    display: block;
+    left: calc(50% - 15px);
+    border-width:15px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+}
+.item-testimo .testimo-self{
+    text-align: center;
+    font-size: 10pt;
+}
+.testimo-self img{
+    width: 45px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+}.testimo-self p{
+    font-size: 12pt;
+    font-weight: bold;
+}
+.testimo-self span{
+    color:#8a8780;
+}
+
+/*Animation*/
+@keyframes testimo{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    75%{margin-left: -300%;}
+    95%{margin-left: -300%;}
+    100%{margin-left: -400%;}
+}
