@@ -2,6 +2,8 @@
 
 <h1 align="center">
     <img alt="app Ctempletes" src=".github/cover.jpg" />
+    <img alt="isutic Ctempletes" src=".github/isutic.jpg" />
+    <img alt="frau Ctempletes" src=".github/frau.jpg" />
 </h1>
 
 ## 🧪 Tecnologias
@@ -22,20 +24,20 @@ $ cd templates-cloned-without-framework
 ```
 
 Para iniciá-lo, siga os passos abaixo:
+
 ```bash
 # Iniciar o projeto
-$ abrir na raiz o arquivo #index.html 
+$ abrir na raiz o arquivo #index.html
 ```
-O app estará disponível no seu browser
 
+O app estará disponível no seu browser
 
 ## 💻 Projeto
 
-* Nesta app , teremos a junção de muitos dos landing pages feitas por mim ou por meio de um curso...
+- Nesta app , teremos a junção de muitos dos landing pages feitas por mim ou por meio de um curso...
 
-* Pagina inicial: composto por um header e um footer e uma área pricipal, onde poderás escolher que lading page que ver...
-* pagina selecionada: após a seleção de uma página é possivel navegar por ela e vê o que ela tem.. tando de visual como funcional.
-
+- Pagina inicial: composto por um header e um footer e uma área pricipal, onde poderás escolher que lading page que ver...
+- pagina selecionada: após a seleção de uma página é possivel navegar por ela e vê o que ela tem.. tando de visual como funcional.
 
 ---
 
